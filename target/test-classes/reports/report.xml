@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="99.041" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Document" name="Amazon Uid test" time="26.003">
+<system-out><![CDATA[
+Given I open browser "chrome" and get url "https://www.amazon.in/" generate report "AmazonReport".passed
+And click on signin.........................................................passed
+When I enter valid userid "paragguide@yahoo.co.in"..........................passed
+And click continue button...................................................passed
+Then I validate userid......................................................passed
+And password textbox comes..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Amazon Pwd test" time="23.303">
+<system-out><![CDATA[
+Given uid is valid..........................................................passed
+When i enter correct password "RMinfotech"..................................passed
+Then i should login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Amazon Product search - Example #1.1" time="23.458">
+<system-out><![CDATA[
+Given user is logged in.....................................................passed
+When i search for product Mobile with price 15000...........................passed
+Then result should come.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Amazon Product search - Example #1.2" time="22.5">
+<system-out><![CDATA[
+Given user is logged in.....................................................passed
+When i search for product LCD with price 35000..............................passed
+Then result should come.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Amazon Product search - Example #1.3" time="3.467">
+<system-out><![CDATA[
+Given user is logged in.....................................................passed
+When i search for product shirt with price 3000.............................passed
+Then result should come.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
